@@ -31,7 +31,7 @@ echo '==================================> BEFORE_SCRIPT'
 
 . $DRONE_CURRENT_BUILD_DIR/.drone/before-script.sh
 
-echo '==================================> COMPILE'
+echo '==================================> SCRIPT'
 
 echo "using $TOOLSET : : $COMPILER ;" > ~/user-config.jam
 ./b2 -j 3 libs/fiber/test toolset=$TOOLSET cxxstd=$CXXSTD
